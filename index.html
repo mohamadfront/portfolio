@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="css/style.css">
+
+<title>portfolio</title>
+
+
+</head>
+
+
+<body>
+
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div id="preloader" style="
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease;
+">
+  <div class="particles" id="particles"></div>
+  <div class="glow-orb"></div>
+  <div class="glow-orb"></div>
+
+  <div class="preloader">
+    <div class="preloader-container">
+      <div class="logo-container">
+        <div class="preloader-logo">MH</div>
+      </div>
+      <div class="preloader-name">Mohamad Hamad</div>
+      <div class="loading-text">Loading Portfolio</div>
+      <div class="loader-container">
+        <div class="loader-circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="progress-section">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="preloader-percentage" id="percentage">0%</div>
+        <div class="status-text" id="status">Initializing...</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===== END PRELOADER ===== -->
+
+<header class="header" id="header">
+    <div class="blob-animate"></div>
+    <nav class="nav container"> 
+    <a href="#" class="nav-logo">Mohamad Hamad</a>
+    
+    <div class="nav-menu">
+       <ul class="nav-list">
+    <li>
+        <a href="#about" class="nav-link">About us</a>
+    </li>
+       <li>
+        <a href="#projects" class="nav-link">Projects</a>
+    </li>
+       <li>
+        <a href="#contact" class="nav-link">Contact</a>
+    </li>
+    <!-- أضفه بجانب nav-logo أو في نهاية الـ nav -->
+     <li>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+  <span class="theme-toggle-track">
+    <span class="theme-toggle-thumb">
+      <i class="ri-moon-line theme-icon moon"></i>
+      <i class="ri-sun-line theme-icon sun"></i>
+    </span>
+  </span>
+</button>
+</li>
+</ul> 
+
+    </div>    
+    
+    </nav>
+
+</header>
+
+<main class="main">
+    <div class="cursor"></div>
+    <section class="home section">
+        <div class="home-shadow"></div>
+        <div class="home-container container grid">
+            <div class="home-data">
+       <h3 class="home-greeting">Hello, I'm</h3>
+<h1 class="home-name">Mohamad <br> Hamad</h1>
+            </div>
+
+            <div class="home-image">
+                <div class="blob-animate"></div>
+                <img src="img/me.png" alt="image" class="home-perfil">
+
+            </div>
+           <div class="home-info">
+          <h3 class="home-split">Creative</h3>
+<h2 class="home-profession-1">Frontend</h2>
+<h2 class="home-profession-2">Developer</h2>
+
+
+           </div>
+       <div class="home-social">
+
+  <!-- Email -->
+  <a href="hamadmohamadfront@gmail.com" class="home-social-link">
+    <i class="ri-mail-line"></i>
+  </a>       
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/96338378793" target="_blank" class="home-social-link">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+</div>
+
+           <a href="cv/cv.pdf"  download target="_blank" class="home-cv">
+            CV  <i class="ri-file-list-2-line"></i>
+
+           </a>
+        </div>
+
+    </section>
+
+
+
+        <section class="robot-section" data-aos="fade-in" data-aos-duration="1000">
+
+  <div class="robot-bg"></div>
+
+  <div class="robot-container">
+
+    <div class="robot-content" data-aos="fade-up" data-aos-duration="1000">
+      
+      <div class="robot-tag-box" data-aos="zoom-in" data-aos-delay="200">
+        <div class="robot-tag">WHAT I DO 🚀</div>
+      </div>
+
+      <h1 class="robot-title" data-aos="fade-right" data-aos-delay="400">
+  I Build Modern <br> Web Experiences
+      </h1>
+
+      <p class="robot-description" data-aos="fade-left" data-aos-delay="600">
+      I create responsive, fast, and user-friendly websites using modern
+technologies like HTML, CSS, JavaScript.
+Focused on clean design and smooth user experience.
+      </p>
+
+      <div class="robot-buttons" data-aos="fade-up" data-aos-delay="800">
+<a href="cv/cv.pdf" class="robot-btn-filled" download>
+      Download CV
+
+  <i class="fa-solid fa-download"></i>
+</a>    </div>
+
+    </div>
+
+    <div class="robot-viewer" data-aos="fade-in" data-aos-delay="1000">
+      <spline-viewer
+        url="https://prod.spline.design/6LHceUGLmq1QrT2C/scene.splinecode">
+      </spline-viewer>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+ <!-- <section class="about section" id="about">
+        <div class="about-shadow "></div>
+        <div class="about-container container grid">
+            <div class="about-data">
+                  <h2 class="section-title">
+                    <span>Creatvity</span>
+                    <br>Is My Passion
+                  </h2>
+                  <p class="about-description">
+                    I'm a Web <b>developer and designer</b> passionate about experimenting with new <b>skills and Creative .</b>
+                    Driven by learning and curiosity, I'm always looking to explore and learn new development and design skills. 
+                  </p>
+                 <a href="" download target="_blank" class="button">
+                    Resume <i class="ri-file-list-2-line"></i>
+                 </a>
+            </div>
+            <div class="about-image">
+                <div class="blob-animate"></div>
+                <div class="blob-animate"></div>
+                <img src="img/me2.png"   alt="image" class="about-perfil">
+
+            </div>
+            
+        </div>
+    </section> -->
+
+
+            <section class="projects section" id="projects">
+        <h2 class="section-title">
+            MY <br>
+            <span>Projects</span>
+        </h2>
+        <div class="projects-container container grid">
+            <div class="projects-swiper swiper">
+            <div class="swiper-wrapper">
+
+            <article class="projects-card swiper-slide"
+    data-title="Tashkelah"
+    data-type="FREELANCE"
+    data-desc="Tashkelah is a modern and responsive landing page for a sports booking mobile application. It allows users to easily book football fields, manage matches, and stay connected with their team.
+
+    I converted the design from Figma into a fully functional website using HTML, CSS, Bootstrap, and JavaScript. I focused on creating a clean UI/UX, smooth interactions, and a fully responsive layout across all devices. The project includes sections like hero, features, testimonials, FAQ, and app download."
+
+    data-imgs='["img/tashkelah1.jpeg","img/tashkelah2.jpeg","img/tashkelah3.jpeg","img/tashkelah4.jpeg"]'
+    data-link="">
+
+    <div class="blob"></div>
+
+    <div class="projects-number">
+        <h1>01</h1>
+        <h3>Web</h3>
+    </div>
+
+    <div class="projects-data">
+        <h1 class="projects-title">Tashkelah </h1>
+        <p class="projects-subtitle">FREELANCE</p>
+    </div>
+
+    <div class="projects-image">
+        <img src="img/tashkelah1.jpeg" alt="" class="projects-img">
+        <img src="img/tashkelah2.jpeg" alt="" class="projects-img">
+        <img src="img/tashkelah3.jpeg" alt="" class="projects-img">
+        <img src="img/tashkelah4.jpeg" alt="" class="projects-img">
+
+        <div class="projects-overlay">
+        <span>More Details</span>
+        </div>
+    </div>
+    </article>
+              <article class="projects-card swiper-slide"
+  data-title="Mobile Services Web Application"
+  data-type="Personal Project"
+  data-desc="A responsive web application for managing digital services and mobile store operations. It provides a smooth user experience for handling balance transfers, activating gaming packages such as PUBG and Free Fire, and managing different service categories in an organized interface."
+
+  data-imgs='["img/syr1.jpeg", "img/syr2.jpeg", "img/syr3.jpeg","img/syr4.jpeg","img/syr5.jpeg"]'
+  data-link="">
+
+  <div class="blob"></div>
+
+  <div class="projects-number">
+    <h1>02</h1>
+    <h3>Web</h3>
+  </div>
+
+  <div class="projects-data">
+    <h1 class="projects-title">Mobile Services Web App</h1>
+    <p class="projects-subtitle">FREELANCE</p>
+  </div>
+
+  <div class="projects-image">
+    <img src="img/syr1.jpeg" alt="" class="projects-img">
+    <img src="img/syr2.jpeg" alt="" class="projects-img">
+    <img src="img/syr3.jpeg" alt="" class="projects-img">
+    <img src="img/syr4.jpeg" alt="" class="projects-img">
+    <img src="img/syr5.jpeg" alt="" class="projects-img">
+
+    <div class="projects-overlay">
+      <span>More Details</span>
+    </div>
+  </div>
+</article>
+
+          <article class="projects-card swiper-slide"
+  data-title="Aravira AI Learning Platform"
+  data-type="Freelance"
+  data-desc="A modern and responsive e-learning platform focused on teaching Artificial Intelligence in Arabic. The platform allows users to explore courses, watch lessons, and access educational content through a clean and engaging interface."
+
+  data-imgs='["img/aravira1.jpeg","img/aravira2.jpeg","img/aravira3.jpeg","img/aravira4.jpeg"]'
+  data-link="">
+
+  <div class="blob"></div>
+
+  <div class="projects-number">
+    <h1>03</h1>
+    <h3>Web</h3>
+  </div>
+
+  <div class="projects-data">
+    <h1 class="projects-title">Aravira Platform</h1>
+    <p class="projects-subtitle">Freelance</p>
+  </div>
+
+  <div class="projects-image">
+    <img src="img/aravira1.jpeg" alt="" class="projects-img">
+    <img src="img/aravira2.jpeg" alt="" class="projects-img">
+    <img src="img/aravira3.jpeg" alt="" class="projects-img">
+    <img src="img/aravira4.jpeg" alt="" class="projects-img">
+
+    <div class="projects-overlay">
+      <span>More Details</span>
+    </div>
+  </div>
+</article>
+
+            <article class="projects-card swiper-slide"
+  data-title="Quick Builders Landing Page"
+  data-type="Freelance"
+  data-desc="Quick Builders is a modern one-page website for a construction and interior design company. The website showcases the company's services, previous work, and provides quick contact options for clients.
+
+The layout is clean and focused on visual presentation, including project galleries, company information, and location details."
+
+  data-imgs='["img/quick1.jpeg","img/quick2.jpeg","img/quick3.jpeg"]'
+  data-link="">
+
+  <div class="blob"></div>
+
+  <div class="projects-number">
+    <h1>04</h1>
+    <h3>Web</h3>
+  </div>
+
+  <div class="projects-data">
+    <h1 class="projects-title">Quick Builders</h1>
+    <p class="projects-subtitle">Freelance</p>
+  </div>
+
+  <div class="projects-image">
+    <img src="img/quick1.jpeg" alt="" class="projects-img">
+    <img src="img/quick2.jpeg" alt="" class="projects-img">
+    <img src="img/quick3.jpeg" alt="" class="projects-img">
+
+    <div class="projects-overlay">
+      <span>More Details</span>
+    </div>
+  </div>
+</article>
+
+
+
+<article class="projects-card swiper-slide"
+  data-title="Events Platform"
+  data-type="Internship Project"
+  data-desc="Events is a modern platform for discovering upcoming events, allowing users to explore detailed information, search for events, and stay updated with what's happening.
+
+The platform also includes an advertising system where clients can publish their own ads, with a clean UI and smooth user experience. This project was developed during my internship at Almonqed Company."
+
+  data-imgs='["img/event1.jpeg","img/event2.jpeg","img/event3.jpeg","img/event4.jpeg","img/event5.jpeg","img/event6.jpeg","img/event7.jpeg"]'
+  data-link="">
+
+  <div class="blob"></div>
+
+  <div class="projects-number">
+    <h1>05</h1>
+    <h3>Web</h3>
+  </div>
+
+  <div class="projects-data">
+    <h1 class="projects-title">Events Platform</h1>
+    <p class="projects-subtitle">Internship</p>
+  </div>
+
+  <div class="projects-image">
+    <img src="img/event1.jpeg" alt="" class="projects-img">
+    <img src="img/event2.jpeg" alt="" class="projects-img">
+    <img src="img/event3.jpeg" alt="" class="projects-img">
+    <img src="img/event4.jpeg" alt="" class="projects-img">
+    <img src="img/event5.jpeg" alt="" class="projects-img">
+    <img src="img/event6.jpeg" alt="" class="projects-img">
+    <img src="img/event7.jpeg" alt="" class="projects-img">
+
+    <div class="projects-overlay">
+      <span>More Details</span>
+    </div>
+  </div>
+</article>
+
+
+               <article class="projects-card swiper-slide"
+  data-title="Product Management Dashboard"
+  data-type="Frontend Project"
+  data-desc="A modern product management dashboard built to handle products, pricing, and order activation. The system provides a clean interface for managing data efficiently with a focus on usability and performance."
+
+  data-imgs='["img/dash1.jpeg","img/dash2.jpeg","img/dash3.jpeg","img/dash4.jpeg"]'
+  data-link="">
+
+  <div class="blob"></div>
+
+  <div class="projects-number">
+    <h1>06</h1>
+    <h3>Web</h3>
+  </div>
+
+  <div class="projects-data">
+    <h1 class="projects-title">Products Dashboard</h1>
+    <p class="projects-subtitle">FREELANCE</p>
+  </div>
+
+  <div class="projects-image">
+    <img src="img/dash1.jpeg" alt="" class="projects-img">
+    <img src="img/dash2.jpeg" alt="" class="projects-img">
+    <img src="img/dash3.jpeg" alt="" class="projects-img">
+    <img src="img/dash4.jpeg" alt="" class="projects-img">
+
+    <div class="projects-overlay">
+      <span>More Details</span>
+    </div>
+  </div>
+</article>
+
+           <article class="projects-card swiper-slide"
+  data-title="Industrial Services Platform"
+  data-type="Internship Project"
+  data-desc="A modern web platform designed for construction companies and industrial businesses, showcasing services, company information, and project highlights with a clean and structured layout."
+
+  data-imgs='["img/factory.jpeg","img/factory2.jpeg","img/factory3.jpeg","img/factory4.jpeg","img/factory5.jpeg","img/factory6.jpeg","img/factory7.jpeg","img/factory8.jpeg"]'
+  data-link="">
+
+  <div class="blob"></div>
+
+  <div class="projects-number">
+    <h1>07</h1>
+    <h3>Web</h3>
+  </div>
+
+  <div class="projects-data">
+    <h1 class="projects-title">Industrial Platform</h1>
+    <p class="projects-subtitle">Internship</p>
+  </div>
+
+  <div class="projects-image">
+    <img src="img/factory.jpeg" alt="" class="projects-img">
+    <img src="img/factory2.jpeg" alt="" class="projects-img">
+    <img src="img/factory3.jpeg" alt="" class="projects-img">
+    <img src="img/factory4.jpeg" alt="" class="projects-img">
+    <img src="img/factory5.jpeg" alt="" class="projects-img">
+    <img src="img/factory6.jpeg" alt="" class="projects-img">
+    <img src="img/factory7.jpeg" alt="" class="projects-img">
+    <img src="img/factory8.jpeg" alt="" class="projects-img">
+
+    <div class="projects-overlay">
+      <span>More Details</span>
+    </div>
+  </div>
+</article>  
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div class="modal-content">
+        <div class="modal-slideshow" id="modalSlideshow">
+            <div class="modal-zoom-hint"><i class="ri-zoom-in-line"></i></div>
+            <div class="modal-dots" id="modalDots"></div>
+        </div>
+        <div class="modal-info">
+            <span class="modal-type" id="modalType"></span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <div class="modal-divider"></div>
+            <p class="modal-label">About the project</p>
+                        <div class="modal-divider"></div>
+
+            <p class="modal-desc" id="modalDesc"></p>
+            <p class="modal-label">What I did</p>
+                        <div class="modal-divider"></div>
+
+            <p class="modal-desc" id="modalDid"></p>
+            <a class="modal-link button" id="modalLink" href="" target="_blank">
+            Visit Site <i class="ri-arrow-right-up-long-line"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+  <section class="work section">
+        
+  <h2 class="section-title">
+      <span>My Works</span>
+      <br> Experience
+  </h2>
+
+  <div class="work-container container grid">
+    <div class="work-tabs">
+
+      <button class="work-button work-active" data-target="#experience">
+        Experience <i class="ri-briefcase-3-line"></i>
+      </button>
+
+      <button class="work-button" data-target="#education">
+        Education <i class="ri-graduation-cap-line"></i>
+      </button>
+
+    </div>
+
+    <div class="work-area">
+      <div class="work-line"></div>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <div class="work-content work-active" data-content id="experience">
+
+        <div class="work-card">
+          <div class="work-data">
+            <div>
+              <h1 class="work-title">Frontend <br> Developer</h1>
+              <h3 class="work-subtitle">Trend XP Company</h3>
+            </div>
+            <h2 class="work-year">2023</h2>
+          </div>
+          <p class="work-description">
+            Completed a 2-month internship focused on frontend development, working with modern web technologies and improving practical development skills.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-data">
+            <div>
+              <h1 class="work-title">Freelance <br> Developer</h1>
+              <h3 class="work-subtitle">Quick Builders</h3>
+            </div>
+            <h2 class="work-year">2024</h2>
+          </div>
+          <p class="work-description">
+            Developed a modern one-page website for a construction company, focusing on responsive design, UI/UX, and clean presentation of services and projects.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-data">
+            <div>
+              <h1 class="work-title">Freelance <br> Developer</h1>
+              <h3 class="work-subtitle">Talent Bridge</h3>
+            </div>
+            <h2 class="work-year">2024</h2>
+          </div>
+          <p class="work-description">
+            Worked on a freelance platform similar to marketplaces, connecting freelancers with clients, focusing on user experience and structured interface.
+          </p>
+        </div>
+
+     <div class="work-card">
+  <div class="work-data">
+    <div>
+      <h1 class="work-title">Frontend <br> Internship</h1>
+      <h3 class="work-subtitle">Almonqed Company (Real Company)</h3>
+    </div>
+    <h2 class="work-year">2025</h2>
+  </div>
+  <p class="work-description">
+    Completed a 3-month internship at a real company, working on real-world projects including event platforms and industrial websites. Built responsive interfaces, integrated frontend with backend systems, and developed dashboard features.
+  </p>
+</div>
+
+        <div class="work-card">
+          <div class="work-data">
+            <div>
+              <h1 class="work-title">Frontend <br> Training</h1>
+              <h3 class="work-subtitle">Darbny Program</h3>
+            </div>
+            <h2 class="work-year">2025</h2>
+          </div>
+          <p class="work-description">
+            Completed a 3-month intensive frontend training program covering modern web development concepts and best practices.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-data">
+            <div>
+              <h1 class="work-title">Volunteer <br> Work</h1>
+              <h3 class="work-subtitle">STARS Organization</h3>
+            </div>
+            <h2 class="work-year">2024</h2>
+          </div>
+          <p class="work-description">
+            Volunteered in an animal protection organization, contributing to community work and supporting animal welfare initiatives.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ================= EDUCATION ================= -->
+      <div class="work-content" data-content id="education">
+
+        <div class="work-card">
+          <div class="work-data">
+            <div>
+              <h1 class="work-title">Software <br> Engineering</h1>
+              <h3 class="work-subtitle">Arab International University (AIU)</h3>
+            </div>
+            <h2 class="work-year">2024</h2>
+          </div>
+          <p class="work-description">
+            Graduated with a degree in Information Technology – Software Engineering, building strong foundations in programming, system design, and web development.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-data">
+            <div>
+              <h1 class="work-title">Graduation <br> Project</h1>
+              <h3 class="work-subtitle">Hosting Management System</h3>
+            </div>
+            <h2 class="work-year">2023</h2>
+          </div>
+          <p class="work-description">
+            Developed a hosting server management system that allows users to manage hosting services (web, email, FTP) through a user-friendly interface connected to server control panels via APIs. Worked as a frontend developer and contributed to system analysis.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="services section">
+
+  <div class="services-bg">
+    <span class="bg-shape shape-1"></span>
+    <span class="bg-shape shape-2"></span>
+    <span class="bg-shape shape-3"></span>
+    <span class="bg-shape shape-4"></span>
+    <span class="bg-shape shape-5"></span>
+  </div>
+
+  <h2 class="section-title">What I <span>offer</span></h2>
+
+  <div class="services-container container grid">
+
+    <!-- ===== CARD 1 ===== -->
+    <div class="services-card services-open">
+      <div class="blob"></div>
+
+      <div class="services-data">
+        <h2 class="services-title">Frontend Development</h2>
+        <p class="services-description">
+          I build responsive and modern websites using HTML, CSS, and JavaScript. 
+          I convert Figma designs into real websites and integrate APIs to create dynamic user experiences.
+        </p>
+      </div>
+
+      <div class="services-info">
+        <h3 class="services-subtitle">Technologies</h3>
+
+        <ul class="services-skills">
+          <li class="services-skill"><i class="fab fa-html5 html"></i> HTML5</li>
+          <li class="services-skill"><i class="fab fa-css3-alt css"></i> CSS3</li>
+          <li class="services-skill"><i class="fab fa-js js"></i> JavaScript</li>
+          <li class="services-skill"><i class="fa-solid fa-mobile-screen responsive"></i> Responsive Design</li>
+          <li class="services-skill"><i class="fa-solid fa-layer-group layout"></i> Layout Conversion</li>
+          <li class="services-skill"><i class="fa-solid fa-object-group ui"></i> UI Structuring</li>
+          <li class="services-skill"><i class="fa-solid fa-table-columns grid"></i> Flexbox / Grid</li>
+        </ul>
+      </div>
+
+      <button class="services-button">
+        <i class="ri-arrow-down-s-line"></i>
+      </button>
+    </div>
+
+    <!-- ===== CARD 2 ===== -->
+    <div class="services-card services-close">
+      <div class="blob blob-2"></div>
+
+      <div class="services-data">
+        <h2 class="services-title">UI Implementation</h2>
+        <p class="services-description">
+          I convert Figma designs into pixel-perfect and responsive layouts, focusing on clean UI, layout accuracy, and smooth user experience.
+        </p>
+      </div>
+
+      <div class="services-info">
+        <h3 class="services-subtitle">Technologies</h3>
+
+        <ul class="services-skills">
+          <li class="services-skill"><i class="fab fa-figma figma"></i> Figma</li>
+          <li class="services-skill"><i class="fa-solid fa-mobile-screen responsive"></i> Responsive Design</li>
+          <li class="services-skill"><i class="fa-solid fa-layer-group layout"></i> Layout Conversion</li>
+          <li class="services-skill"><i class="fa-solid fa-object-group ui"></i> UI Structuring</li>
+          <li class="services-skill"><i class="fa-solid fa-table-columns grid"></i> Flexbox / Grid</li>
+        </ul>
+      </div>
+
+      <button class="services-button">
+        <i class="ri-arrow-down-s-line"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+    <section class="contact section" id="contact">
+        <div class="contact-container container grid">
+            <div class="contact-data">
+          <h2 class="section-title">Contact Me</h2>
+          <button class="contact-button button" id="contact-btn">
+            copy email <i class="ri-file-copy-line"></i>
+            <span class="contact-email" id="contact-email">hamadmohamadfront@gmail.com</span>
+          </button>
+            </div>
+            <div class="contact-content grid">
+               <div class="contact-card">
+                  <div class="contact-card-icon">
+                     <i class="ri-map-pin-line"></i>
+                  </div>
+                  <div class="contact-card-data">
+                     <h3 class="contact-card-label">Address</h3>
+                     <span class="contact-card-value">Damascus, Syria</span>
+                  </div>
+               </div>
+
+               <div class="contact-card">
+                  <div class="contact-card-icon">
+                     <i class="ri-whatsapp-line"></i>
+                  </div>
+                  <div class="contact-card-data">
+                     <h3 class="contact-card-label">WhatsApp</h3>
+                     <a href="https://wa.me/96338378793" target="_blank" class="contact-card-value contact-card-link">+963 383 787 93</a>
+                  </div>
+               </div>
+
+               <div class="contact-card">
+                  <div class="contact-card-icon">
+                     <i class="ri-calendar-line"></i>
+                  </div>
+                  <div class="contact-card-data">
+                     <h3 class="contact-card-label">Date of Birth</h3>
+                     <span class="contact-card-value">1998</span>
+                  </div>
+               </div>
+
+               <div class="contact-card">
+                  <div class="contact-card-icon">
+                     <i class="ri-mail-line"></i>
+                  </div>
+                  <div class="contact-card-data">
+                     <h3 class="contact-card-label">Email</h3>
+                     <a href="mailto:hamadmohamadfront@gmail.com" class="contact-card-value contact-card-link">hamadmohamadfront@gmail.com</a>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose"><i class="ri-close-line"></i></button>
+      <button class="lightbox-arrow lightbox-prev" id="lightboxPrev"><i class="ri-arrow-left-s-line"></i></button>
+      <button class="lightbox-arrow lightbox-next" id="lightboxNext"><i class="ri-arrow-right-s-line"></i></button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+</main>
+
+<footer class=" footer grid">
+    <div class="blob-animate"></div>
+    <div class="footer-copy">
+        All Right Reserved By   <span> Mhd Hamad</span> 
+    </div>
+
+    <div class="footer-year">
+        &#169; <span id="footer-year">2025</span>
+    </div>
+
+</footer>
+
+
+
+
+<!-- 2. بعدين: باقي المكتبات -->
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.74/build/spline-viewer.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- 3. أخيراً: main.js -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
