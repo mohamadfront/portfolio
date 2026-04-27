@@ -2021,12 +2021,13 @@ box-shadow: 0 12px 35px rgba(58, 12, 163, 0.25);
 
 /* Info */
 .modal-info {
-  padding: 2rem 1.75rem;
+  padding: 0rem 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 .modal-type {
+  margin-top: 16px;
   font-size: 0.7rem;
   font-weight: var(--font-semi-bold);
   letter-spacing: 1.5px;
